@@ -1,5 +1,8 @@
 .text {
-    background-color: black; }
+    background: black;
+    text-align: right; }
 
-    
+body{
+    background:blueviolet;
+}
 
