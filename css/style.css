@@ -260,7 +260,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 }
 #skills .skill h4 {
 	font-weight: 600;
-	color: #fff;
+	color: #333;
 }
 .chart {
 	position: relative;
