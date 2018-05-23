@@ -626,8 +626,15 @@ header .intro-text {
 
 .jack-box {
 	background-color: whitesmoke;
-	width: 25%;
-	padding: 100px;
+
+	
 	text-align: center;
 	border-radius: 25px;
-}
+	
+	
+	
+}	
+.vcenter{
+	
+		
+		float: none; }
