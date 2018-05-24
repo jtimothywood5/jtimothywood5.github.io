@@ -205,19 +205,20 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	height: auto;
 	text-align: center;
 	color: #fff;
-	background: url(../img/wireframepic.jpg) no-repeat center center;
+	background: url(../img/triangles.png) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
+
 .intro .overlay {
 	padding: 100px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100&0.85+0,0.85+100 */
-	background: -moz-linear-gradient(left, rgba(168, 118, 77, 0.85) 0%, rgba(73, 119, 194, 0.219) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', endColorstr='#d94977c2', GradientType=1 ); /* IE6-9 */
+	/* background: -moz-linear-gradient(left, rgba(168, 118, 77, 0.85) 0%, rgba(73, 119, 194, 0.219) 100%); 
+	background: -webkit-linear-gradient(left, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,0.85) 100%); 
+	background: linear-gradient(to right, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,0.85) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', endColorstr='#d94977c2', GradientType=1 ); */
 }
 .section-title.center {
 	padding: 25px 0 45px 0;
@@ -240,12 +241,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 /* Skills Section */
 #skills {
 	padding: 100px 0;
+	width: 100%;
+	background: url(../img/triangles.png) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
-	background: rgb(107,77,168); /* Old browsers */
-	background: -moz-linear-gradient(left, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right,  rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
+	/* background: rgb(107,77,168); 
+	background: -moz-linear-gradient(left, rgba(77, 165, 168, 0.85) 0%, rgb(146, 73, 194) 100%); 
+	background: -webkit-linear-gradient(left, rgba(77, 165, 168, 0.85) 0%, rgba(146, 73, 194) 100%);
+	background: linear-gradient(to right,  rgba(77, 165, 168, 0.85) 0%, rgba(146, 73, 194) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 );  */
 }
 #skills h2 {
 	color: #fff;
@@ -482,11 +489,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 }
 #contact .overlay {
 	padding: 100px 0 40px 0;
+	/* padding: 100px 0; */
+	width: 100%;
+	background: url(../img/triangles.png) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100&0.85+0,0.85+100 */
-	background: -moz-linear-gradient(left, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,0.85) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', endColorstr='#d94977c2', GradientType=1 ); /* IE6-9 */
+	/* background: -moz-linear-gradient(left, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,0.85) 100%); 
+	background: -webkit-linear-gradient(left, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,0.85) 100%); 
+	background: linear-gradient(to right, rgba(168, 118, 77, 0.85) 0%, rgba(73,119,194,0.85) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', endColorstr='#d94977c2', GradientType=1 );  */
 }
 #contact h2 {
 	color: #fff;
