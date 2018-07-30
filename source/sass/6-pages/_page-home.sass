@@ -1,0 +1,285 @@
+// body
+//   height: 100%
+//   display: flex
+//   justify-content: center
+//   align-items: center
+
+
+// #page-home
+//   margin: 20px
+//   display: flex
+
+
+// .author
+//   margin-top: 100px
+//   p
+//     margin: 0
+
+// .avatar
+//   width: 80px
+//   height: 80px
+//   border-radius: 50%
+//   margin: 20px 0 0
+//   -ms-flex-negative: 0
+//   flex-shrink: 0
+
+// .wrapper-starter
+//   width: 100%
+//   max-width: 700px
+//   background: white
+//   padding: 40px
+//   border-radius: 2px
+//   box-shadow: 0 2px 20px rgba(0,0,0, 0.7)
+//   text-align: center
+
+//   p
+//     color: #666
+
+// h1
+//   margin-bottom: 20px
+// h4
+//   margin-top: 100px
+
+// .button
+//   margin-top: 50px
+//   border: 2px solid $blue
+//   color: $blue
+
+// .flex-video
+//   border: 1px solid black
+
+#header 
+  background: url("../img/rocksit1fresh.JPG") no-repeat
+  background-size: cover
+  height: 700px
+  color: white
+  text-align: center
+  overflow: hidden // crops the image if it goes past the height of this element
+
+  
+  // img 
+  //   max-width: 500px
+  //   width: 100% Removed because it was affecting the logo image and not just the avatar photo
+
+  h1 
+    color: white
+    text-align: center
+    margin-bottom: 10px // space between it and the element below it
+    margin-top: 100px
+
+  article // wrapped around the headline, text and image
+    width: 60% // will be a responsive size of 80% of the container 
+    margin: 0 auto
+    
+  
+.main-nav //navigation section
+  display: flex // assists in lining up items
+  margin-top: 20px // bumps the nav bar down
+  li 
+   list-style: none 
+
+
+  li:first-child // addresses the first element of the header (Logo)
+    margin-right: auto // automatically fills the space to the right of the first element dynamically
+    margin-top: 0px
+    
+    a 
+      padding: 0 // lines up the logo
+      font-weight: 600
+      font-size: 40px
+      
+
+
+  a 
+    color: white //color of the nav bar elements
+    display: block // lines up items so they don't escew vertically or horizontally
+    border-radius: 4px
+    padding: 10px 40px //15x 30y(horzontal spacing between elements) also increase the click hit box of the links
+    text-decoration: none
+    font-weight: 600 // font size
+    text-transform: uppercase // uppercase text
+
+.logo // Resizing the logo
+  max-width: 75px
+  max-height: 75px
+  
+a.contact // format the contact button
+  background: white
+  color: $ocean // declared in source/sass/2-helpers/variables
+  box-shadow: 0 12px 10px -10px rgba(0,0,0,0.5) // x-value y-value blur shrink color/opacity
+
+.avatar
+  max-width: 500px
+  width: 100%   
+
+.headerLayout
+  margin-top: 25%
+  
+.header-text
+  
+  a 
+   
+   padding: 10px 40px
+   box-shadow: 0 12px 10px -10px rgba(0,0,0,0.5) // x-value y-value blur shrink color/opacity
+   border-radius: 4px
+   font-weight: 600
+   font-size: 20px
+   @media only screen and (max-width:680px) // Media query to reorder the nike signs as we shrink the browser
+     font-weight: 600
+     font-size: 10px
+
+
+
+#brands ul 
+  padding: 10px 100px //up down padding for first piece
+  overflow: hidden // Added this myself because nike image had white bleeding into next section
+  max-height: 50px // added this myself because nike image was making huge gap between next section
+  background: white
+  display: grid // css grid is modern technique
+  grid-template-columns: repeat(6, auto) // 6 elements auto spacing?
+  @media only screen and (max-width:550px) // Media query to reorder the nike signs as we shrink the browser
+    grid-template-columns: repeat(3, auto)  
+
+  li 
+    list-style: none // remove the bullet lists
+
+  li img 
+    max-width: 75%
+    // max-height: 25%
+
+
+
+#features
+  background:#f9f9f9 // gray color f9f9f9
+  text-align: center
+  position: relative 
+  height: 500px
+  @media only screen and (max-width: 680px) // Will auto adjust height for resizing
+    height: auto
+  &:after // This is how we angle the gray background
+    bottom: 0
+    position: absolute
+    background: #f9f9f9//inherit
+    content: " "
+    height: 100%
+    left: 0
+    right: 0
+    transform: skewY(-10deg)
+    transform-origin: 100%
+    z-index: -1
+    @media only screen and (max-width: 680px)
+      display: none
+  h2
+    margin: 80px 0
+
+  
+
+
+.portfolio-card //Div class that wraps around 3 elements and puts them in a grid // Media query to make responsive
+  display: grid
+  grid-template-columns: repeat(3,auto)
+  grid-gap: 30px
+  @media only screen and (max-width: 680px)
+    grid-template-columns: repeat(1,auto)
+
+.featurecard
+  background: white
+  padding: 30px 40px 10px 40px // Sizes the box // top, right, bottom, left 
+  box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.2)
+
+  img 
+    max-width: 75px
+  h3
+    margin: 10px 0 0
+    
+
+
+
+
+
+.card1
+  
+  border-top: 4px solid $lightblu
+.card2
+  
+  border-top: 4px solid $lightblu
+.card3
+  
+  border-top: 4px solid $lightblu    
+
+
+#work
+  //margin-top: 150px
+.aboutLayout
+  display: flex // Stopped our two objects from being vertically aligned. Also shrunk imgage..?
+  align-items: center // made both objects even with respect to eachother
+  justify-content: center //specific to flex items
+  margin-top: 150px
+  img 
+   width: 100%
+   max-width: 500px
+
+  .aboutText
+    max-width: 50%
+    margin: 0 auto //verticl and horizontal margins
+    h2 
+      margin-bottom: 20px 
+
+
+// #about
+//   background:#8EE4Af 
+//   align-items: center
+//   position: relative 
+//   height: 300px
+//   margin-top: 200px
+//   @media only screen and (max-width: 680px) // Will auto adjust height for resizing
+//     height: auto
+//   &:after // This is how we angle the gray background
+//     bottom: 0
+//     position: absolute
+//     background: inherit
+//     content: " "
+//     height: 100%
+//     left: 0
+//     right: 0
+//     transform: skewY(10deg)
+//     transform-origin: 100%
+//     z-index: -1
+//     @media only screen and (max-width: 680px)
+//       display: none
+//   h2
+//     margin: 80px 0
+ 
+
+#contact
+ 
+  text-align: center
+  background: url("../img/rockstand_grad1.JPG") no-repeat
+  height: 700px
+  background-size: cover
+  margin-top: -30px
+  .contactLayout
+    // align-items: center
+    margin-top: 30%
+    // positon: relative
+    background:  #f9f9f9
+    padding: 30px 40px 10px 40px // Sizes the box // top, right, bottom, left 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);//box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.2)
+    border-radius: 5px
+    border-top: 4px solid $lightblu
+    // margin: 150px
+    // width: 100%
+
+  .contact
+    background: white
+    color: $ocean // declared in source/sass/2-helpers/variables
+    box-shadow: 0 12px 10px -10px rgba(0,0,0,0.5) // x-value y-value blur shrink color/opacity
+fieldset
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+
+form 
+  margin: 0 auto
