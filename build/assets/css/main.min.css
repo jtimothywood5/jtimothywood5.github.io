@@ -501,6 +501,8 @@ a.contact {
         width: 100%; } }
     .aboutLayout .aboutText h2 {
       margin-bottom: 20px; }
+    .aboutLayout .aboutText p {
+      font-size: 18px; }
   .aboutLayout picture {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
 
