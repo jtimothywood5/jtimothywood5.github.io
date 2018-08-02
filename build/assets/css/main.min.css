@@ -347,7 +347,7 @@ hr {
   overflow: hidden; }
   @media only screen and (max-width: 680px) {
     #header {
-      height: 500px; } }
+      height: 550px; } }
   #header h1 {
     color: white;
     text-align: center;
@@ -498,7 +498,7 @@ a.contact {
     margin: 0 auto; }
     @media only screen and (max-width: 680px) {
       .aboutLayout .aboutText {
-        width: 100%; } }
+        width: auto; } }
     .aboutLayout .aboutText h2 {
       margin-bottom: 20px; }
     .aboutLayout .aboutText p {
@@ -521,8 +521,7 @@ a.contact {
     border-top: 4px solid #A7EAE3; }
     @media only screen and (max-width: 680px) {
       #contact .contactLayout {
-        width: 80%;
-        display: block; } }
+        width: 100%; } }
   #contact .contact {
     background: white;
     color: #00adff;
