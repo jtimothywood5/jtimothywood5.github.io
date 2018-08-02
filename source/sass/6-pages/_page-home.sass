@@ -55,6 +55,9 @@
   color: white
   text-align: center
   overflow: hidden // crops the image if it goes past the height of this element
+  @media only screen and (max-width: 680px)
+    height: 500px
+
 
   
   // img 
@@ -70,7 +73,8 @@
   article // wrapped around the headline, text and image
     width: 60% // will be a responsive size of 80% of the container 
     margin: 0 auto
-    
+    @media only screen and (max-width: 500px)
+      width: 90%
   
 .main-nav //navigation section
   display: flex // assists in lining up items
@@ -181,16 +185,21 @@ a.contact // format the contact button
   grid-gap: 30px
   @media only screen and (max-width: 680px)
     grid-template-columns: repeat(1,auto)
+    
 
 .featurecard
   background: white
   padding: 30px 40px 10px 40px // Sizes the box // top, right, bottom, left 
   box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.2)
 
-  img 
-    max-width: 75px
+  // img 
+  //   max-width: 75px
   h3
     margin: 10px 0 0
+  p 
+   margin-top: 10px
+   font-weight: 500
+   font-size: 15px
     
 
 
@@ -198,14 +207,17 @@ a.contact // format the contact button
 
 
 .card1
-  
   border-top: 4px solid $lightblu
+  img 
+    max-width: 75px
 .card2
-  
   border-top: 4px solid $lightblu
+  img 
+    max-width: 70px
 .card3
-  
-  border-top: 4px solid $lightblu    
+  border-top: 4px solid $lightblu
+  img 
+    max-width: 80px    
 
 
 #work
@@ -215,6 +227,8 @@ a.contact // format the contact button
   align-items: center // made both objects even with respect to eachother
   justify-content: center //specific to flex items
   margin-top: 150px
+  @media only screen and (max-width: 680px)
+    display: block
   img 
    width: 100%
    max-width: 500px
@@ -222,9 +236,12 @@ a.contact // format the contact button
   .aboutText
     max-width: 50%
     margin: 0 auto //verticl and horizontal margins
+    @media only screen and (max-width: 680px)
+     width: 100%
     h2 
       margin-bottom: 20px 
-
+  picture 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
 
 // #about
 //   background:#8EE4Af 
@@ -252,34 +269,65 @@ a.contact // format the contact button
  
 
 #contact
- 
+  overflow: hidden
   text-align: center
   background: url("../img/rockstand_grad1.jpg") no-repeat
   height: 700px
   background-size: cover
-  margin-top: -30px
+  margin-top: 
   .contactLayout
     // align-items: center
-    margin-top: 30%
+    margin-top: 40%
     // positon: relative
     background:  #f9f9f9
     padding: 30px 40px 10px 40px // Sizes the box // top, right, bottom, left 
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);//box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.2)
     border-radius: 5px
     border-top: 4px solid $lightblu
+    @media only screen and (max-width: 680px)
+      width: 80%
+      display: block
     // margin: 150px
     // width: 100%
-
+   
   .contact
     background: white
     color: $ocean // declared in source/sass/2-helpers/variables
     box-shadow: 0 12px 10px -10px rgba(0,0,0,0.5) // x-value y-value blur shrink color/opacity
+    @media only screen and (max-width: 680px)
+      width: 80%
 fieldset
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
+  border: medium none !important
+  margin: 0 0 10px
+  padding: 0
+  width: 100%
 
 form 
   margin: 0 auto
+  // @media only screen and (max-width: 680px)
+  //  width: 80%
+  //  margin: 
+textarea
+ @media only screen and (max-width: 680px)
+  width: 80%
+
+#footer 
+  background: #f9f9f9f9
+  color: white
+  
+.footerLayout
+  display: flex 
+  li 
+    list-style: none
+    
+    float: right
+    text-align: center
+    width: 100%
+    display: block // lines up items so they don't escew vertically or horizontally
+    padding: 10px 10px //15x 30y(horzontal spacing between elements) also increase the click hit box of the links
+    text-decoration: none
+    font-weight: 600 // font size
+  a 
+   text-align: center
+   color: grey
+

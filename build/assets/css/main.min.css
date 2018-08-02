@@ -193,6 +193,9 @@ html {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto; }
+  @media only screen and (max-width: 1000px) {
+    .wrapper {
+      width: 90%; } }
 
 section {
   display: -webkit-box; }
@@ -342,6 +345,9 @@ hr {
   color: white;
   text-align: center;
   overflow: hidden; }
+  @media only screen and (max-width: 680px) {
+    #header {
+      height: 500px; } }
   #header h1 {
     color: white;
     text-align: center;
@@ -350,6 +356,9 @@ hr {
   #header article {
     width: 60%;
     margin: 0 auto; }
+    @media only screen and (max-width: 500px) {
+      #header article {
+        width: 90%; } }
 
 .main-nav {
   display: flex;
@@ -451,58 +460,103 @@ a.contact {
   background: white;
   padding: 30px 40px 10px 40px;
   box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
-  .featurecard img {
-    max-width: 75px; }
   .featurecard h3 {
     margin: 10px 0 0; }
+  .featurecard p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 15px; }
 
 .card1 {
   border-top: 4px solid #A7EAE3; }
+  .card1 img {
+    max-width: 75px; }
 
 .card2 {
   border-top: 4px solid #A7EAE3; }
+  .card2 img {
+    max-width: 70px; }
 
 .card3 {
   border-top: 4px solid #A7EAE3; }
+  .card3 img {
+    max-width: 80px; }
 
 .aboutLayout {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 150px; }
+  @media only screen and (max-width: 680px) {
+    .aboutLayout {
+      display: block; } }
   .aboutLayout img {
     width: 100%;
     max-width: 500px; }
   .aboutLayout .aboutText {
     max-width: 50%;
     margin: 0 auto; }
+    @media only screen and (max-width: 680px) {
+      .aboutLayout .aboutText {
+        width: 100%; } }
     .aboutLayout .aboutText h2 {
       margin-bottom: 20px; }
+  .aboutLayout picture {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
 
 #contact {
+  overflow: hidden;
   text-align: center;
   background: url("../img/rockstand_grad1.jpg") no-repeat;
   height: 700px;
-  background-size: cover;
-  margin-top: -30px; }
+  background-size: cover; }
   #contact .contactLayout {
-    margin-top: 30%;
+    margin-top: 40%;
     background: #f9f9f9;
     padding: 30px 40px 10px 40px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     border-radius: 5px;
     border-top: 4px solid #A7EAE3; }
+    @media only screen and (max-width: 680px) {
+      #contact .contactLayout {
+        width: 80%;
+        display: block; } }
   #contact .contact {
     background: white;
     color: #00adff;
     box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.5); }
+    @media only screen and (max-width: 680px) {
+      #contact .contact {
+        width: 80%; } }
 
 fieldset {
   border: medium none !important;
   margin: 0 0 10px;
-  min-width: 100%;
   padding: 0;
   width: 100%; }
 
 form {
   margin: 0 auto; }
+
+@media only screen and (max-width: 680px) {
+  textarea {
+    width: 80%; } }
+
+#footer {
+  background: #f9f9f9f9;
+  color: white; }
+
+.footerLayout {
+  display: flex; }
+  .footerLayout li {
+    list-style: none;
+    float: right;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: 600; }
+  .footerLayout a {
+    text-align: center;
+    color: grey; }
