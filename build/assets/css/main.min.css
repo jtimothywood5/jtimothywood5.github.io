@@ -380,7 +380,8 @@ hr {
     display: none; }
     @media only screen and (max-width: 750px) {
       .main-nav li.nav-toggle {
-        display: block; }
+        display: block;
+        z-index: 100; }
         .main-nav li.nav-toggle img {
           width: 35px;
           margin-top: -6px; } }
@@ -421,8 +422,26 @@ a.contact {
       font-size: 10px; } }
 
 @media only screen and (max-width: 750px) {
-  .respnav {
-    display: none; } }
+  .responsive-nav {
+    display: none; }
+  .responsive-nav.showNav {
+    display: block;
+    width: 100%;
+    background: #1f1f1f;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .responsive-nav.showNav li {
+    display: block; }
+  .responsive-nav.showNav a {
+    display: block;
+    text-align: left; }
+  .responsive-nav.showNav a:hover {
+    transform: 0; }
+  .responsive-nav.showNav a.contact {
+    background: inherit;
+    color: white;
+    margin-left: 0; } }
 
 #brands ul {
   padding: 10px 100px;
@@ -527,7 +546,8 @@ a.contact {
   text-align: center;
   background: url("../img/rockstand_grad1.jpg") no-repeat;
   height: 700px;
-  background-size: cover; }
+  background-size: cover;
+  display: flex; }
   #contact .contactLayout {
     margin-top: 40%;
     background: #f9f9f9;
@@ -537,14 +557,12 @@ a.contact {
     border-top: 4px solid #A7EAE3; }
     @media only screen and (max-width: 680px) {
       #contact .contactLayout {
-        width: 100%; } }
+        width: 80%;
+        margin: 40% auto; } }
   #contact .contact {
     background: white;
     color: #00adff;
     box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.5); }
-    @media only screen and (max-width: 680px) {
-      #contact .contact {
-        width: 80%; } }
 
 fieldset {
   border: medium none !important;
