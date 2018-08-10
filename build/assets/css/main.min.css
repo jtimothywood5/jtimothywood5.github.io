@@ -347,7 +347,7 @@ hr {
   overflow: hidden; }
   @media only screen and (max-width: 680px) {
     #header {
-      height: 550px; } }
+      height: 560px; } }
   #header h1 {
     color: white;
     text-align: center;
@@ -419,7 +419,7 @@ a.contact {
   @media only screen and (max-width: 680px) {
     .header-text a {
       font-weight: 600;
-      font-size: 10px; } }
+      font-size: 15px; } }
 
 @media only screen and (max-width: 750px) {
   .responsive-nav {
@@ -434,14 +434,18 @@ a.contact {
   .responsive-nav.showNav li {
     display: block; }
   .responsive-nav.showNav a {
+    padding: 40px;
     display: block;
-    text-align: left; }
+    text-align: center; }
   .responsive-nav.showNav a:hover {
-    transform: 0; }
+    transform: translate(0);
+    color: #00adff; }
   .responsive-nav.showNav a.contact {
     background: inherit;
     color: white;
-    margin-left: 0; } }
+    margin-left: 0; }
+  .responsive-nav.showNav a.contact:hover {
+    color: #00adff; } }
 
 #brands ul {
   padding: 10px 100px;
@@ -533,7 +537,8 @@ a.contact {
     margin: 0 auto; }
     @media only screen and (max-width: 680px) {
       .aboutLayout .aboutText {
-        width: auto; } }
+        max-width: 100%;
+        text-align: center; } }
     .aboutLayout .aboutText h2 {
       margin-bottom: 20px; }
     .aboutLayout .aboutText p {
@@ -582,7 +587,8 @@ form {
   color: white; }
 
 .footerLayout {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   .footerLayout li {
     list-style: none;
     float: right;

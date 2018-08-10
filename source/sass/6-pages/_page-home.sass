@@ -56,7 +56,7 @@
   text-align: center
   overflow: hidden // crops the image if it goes past the height of this element
   @media only screen and (max-width: 680px)
-    height: 550px
+    height: 560px
     
 
   
@@ -141,7 +141,7 @@ a.contact // format the contact button
    font-size: 20px
    @media only screen and (max-width:680px) // Media query to reorder the nike signs as we shrink the browser
      font-weight: 600
-     font-size: 10px  
+     font-size: 15px  
 
 // Responsive nav section
 @media only screen and (max-width: 750px)
@@ -154,17 +154,22 @@ a.contact // format the contact button
     position: absolute
     top: 0
     right: 0
+    
   .responsive-nav.showNav li
     display: block
   .responsive-nav.showNav a
+    padding: 40px
     display: block
-    text-align: left
+    text-align: center
   .responsive-nav.showNav a:hover
-    transform: 0
+    transform: translate(0)
+    color: $ocean
   .responsive-nav.showNav a.contact 
     background: inherit
     color: white
     margin-left: 0
+  .responsive-nav.showNav a.contact:hover
+    color: $ocean  
   
 #brands ul 
   padding: 10px 100px //up down padding for first piece
@@ -269,7 +274,8 @@ a.contact // format the contact button
     max-width: 50%
     margin: 0 auto //verticl and horizontal margins
     @media only screen and (max-width: 680px)
-     width: auto
+     max-width: 100%
+     text-align: center
     h2 
       margin-bottom: 20px 
     p 
@@ -356,9 +362,9 @@ textarea
   
 .footerLayout
   display: flex 
+  justify-content: center
   li 
     list-style: none
-    
     float: right
     text-align: center
     width: 100%
