@@ -560,6 +560,8 @@ a.contact {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     border-radius: 5px;
     border-top: 4px solid #A7EAE3; }
+    #contact .contactLayout h3 {
+      margin-top: 1px; }
     @media only screen and (max-width: 680px) {
       #contact .contactLayout {
         width: 80%;
